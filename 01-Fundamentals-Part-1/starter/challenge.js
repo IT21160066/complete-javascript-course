@@ -1,3 +1,4 @@
+//1 coding challenge
 // BMI calculator
 
 // const markMass = 78;
@@ -33,3 +34,21 @@ let markHigherBMI = markBMI > johnBMI;
 console.log(markHigherBMI);*/
 
 //2 coding challenge
+//BMI calculator
+
+const markMass = 78;
+const markHeight = 1.69;
+
+const johnMass = 92;
+const johnHeight = 1.95;
+
+const BMICalculatorForMark = markMass / (markHeight * markHeight);
+const BMICalculatorForJohn = johnMass / (johnHeight * johnHeight);
+
+const isMarkBMIHigh = BMICalculatorForMark > BMICalculatorForJohn
+
+if(isMarkBMIHigh == true){
+    console.log(`Mark's BMI is higher than John's and vlaue is : ${BMICalculatorForMark}`);
+} else {
+    console.log(`John's BMI is higher than Mark's and value is : ${BMICalculatorForJohn}`);
+}
