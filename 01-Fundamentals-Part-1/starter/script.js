@@ -200,7 +200,7 @@ if(height) {
 
 //equality operator
 
-const age = '18';
+/*const age = '18';
 //strict equal operator
 if(age === 18) console.log('You are adult (strict)')
 //loose eqaul operator
@@ -215,4 +215,31 @@ else if(favourite === 7) console.log('number 7');
 else if(favourite === 9) console.log('number 9');
 else console.log('number is not 23 or 7');
 
-if(favourite !== 23) console.log('why not 9')
+if(favourite !== 23) console.log('why not 9')*/
+
+//boolean logic
+
+const hasDriversLicence = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicence && hasGoodVision);
+console.log(hasDriversLicence || hasGoodVision);
+console.log(!hasDriversLicence);
+
+// const shouldDrive = hasDriversLicence && hasGoodVision;
+
+// if(shouldDrive) {
+//     console.log('sara is able to drive')
+// } else { 
+//     console.log('someone else should drive');
+// }
+
+const isNotTired = true;
+
+console.log(hasDriversLicence || hasGoodVision || isTired);
+
+if(hasDriversLicence && hasGoodVision && isNotTired) {
+    console.log('sara is abe to drive')
+} else { 
+    console.log('someone else should drive');
+}
