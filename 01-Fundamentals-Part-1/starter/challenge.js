@@ -36,7 +36,7 @@ console.log(markHigherBMI);*/
 //2 coding challenge
 //BMI calculator
 
-const markMass = 78;
+/*const markMass = 78;
 const markHeight = 1.69;
 
 const johnMass = 92;
@@ -51,4 +51,28 @@ if(isMarkBMIHigh == true){
     console.log(`Mark's BMI is higher than John's and vlaue is : ${BMICalculatorForMark}`);
 } else {
     console.log(`John's BMI is higher than Mark's and value is : ${BMICalculatorForJohn}`);
+}*/
+
+//coding challenge 3
+/*
+// const averageDolphins = (96 + 108 + 89) / 3;
+// const averageKoalas = (88 + 91 + 110) / 3;
+
+const averageDolphins = (97 + 112 + 101) / 3;
+const averageKoalas = (109 + 95 + 106) / 3;
+
+console.log(averageDolphins, averageKoalas);
+
+if( averageDolphins > averageKoalas && averageDolphins >= 100) {
+    console.log('Team dolphins win');
+} else if ( averageKoalas > averageDolphins && averageKoalas >= 100) {
+    console.log('Team koals win');
+} else if ( averageDolphins === averageKoalas && averageDolphins >= 100
+    && averageKoalas >= 100) {
+        console.log('both teams has same score');
+} else {
+    console.log('no one wins the trophy');
 }
+*/
+
+

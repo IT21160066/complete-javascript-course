@@ -219,7 +219,7 @@ if(favourite !== 23) console.log('why not 9')*/
 
 //boolean logic
 
-const hasDriversLicence = true;
+/*const hasDriversLicence = true;
 const hasGoodVision = true;
 
 console.log(hasDriversLicence && hasGoodVision);
@@ -242,4 +242,5 @@ if(hasDriversLicence && hasGoodVision && isNotTired) {
     console.log('sara is abe to drive')
 } else { 
     console.log('someone else should drive');
-}
+}*/
+
