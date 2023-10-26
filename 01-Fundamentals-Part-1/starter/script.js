@@ -178,7 +178,7 @@ console.log(n);*/
 
 // 5 falsy values: 0, '', undefined, null, NaN
 
-console.log(Boolean(0));
+/*console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean('Jonas')); //truthy value
 console.log(Boolean({}));
@@ -196,4 +196,23 @@ if(height) {
     console.log('height is defined')
 } else {
     console.log('height is undefined')
-}
+}*/
+
+//equality operator
+
+const age = '18';
+//strict equal operator
+if(age === 18) console.log('You are adult (strict)')
+//loose eqaul operator
+if(age == 18) console.log('You are adult (loose)')
+
+const favourite = Number(prompt('What is your favourite number : '))
+console.log(favourite, typeof favourite);
+
+if(favourite == 23) console.log('23 is cool');
+if(favourite === 23) console.log('number 23');
+else if(favourite === 7) console.log('number 7');
+else if(favourite === 9) console.log('number 9');
+else console.log('number is not 23 or 7');
+
+if(favourite !== 23) console.log('why not 9')
