@@ -244,3 +244,34 @@ if(hasDriversLicence && hasGoodVision && isNotTired) {
     console.log('someone else should drive');
 }*/
 
+//swict statement
+
+const day = 'Wednesday';
+
+switch( day ) {
+    case 'Monday': //day === 'Monday'
+        console.log("Plan course structure");
+        console.log("second line");
+        break;
+    case 'Tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case "Wednesday":
+    case "Thursday":
+        console.log('Write code examples');
+        break;
+    default:
+        console.log('Invalid date');
+}
+
+const newDay = 'Thursday';
+
+if( newDay === 'Monday')
+    console.log("Plan course structure");
+else if( newDay === 'Wednesday' || newDay === "Thursday")
+    console.log('Write code examples');
+else
+    console.log('Invalid date');
+
+
+
