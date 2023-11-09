@@ -286,5 +286,10 @@ else
 const age = 23;
 age >= 18 ? console.log('if') : console.log('else');
 
+const value = age >= 18 ? 'if' : 'else';
+console.log(value);
+
+console.log(`hello ${age >= 18 ? 'if' : 'else'}`);
+
 
 
