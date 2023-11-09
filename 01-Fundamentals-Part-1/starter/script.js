@@ -279,7 +279,12 @@ else
 //expressions produce values
 //statement like full sentences not produce values
 
-console.log(`I'm ${20 - 5}`) //expression
+//console.log(`I'm ${20 - 5}`) //expression
+
+//ternary operator --- conditoional operator
+
+const age = 23;
+age >= 18 ? console.log('if') : console.log('else');
 
 
 
