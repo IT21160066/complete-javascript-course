@@ -246,7 +246,7 @@ if(hasDriversLicence && hasGoodVision && isNotTired) {
 
 //swict statement
 
-const day = 'Wednesday';
+/*const day = 'Wednesday';
 
 switch( day ) {
     case 'Monday': //day === 'Monday'
@@ -272,6 +272,14 @@ else if( newDay === 'Wednesday' || newDay === "Thursday")
     console.log('Write code examples');
 else
     console.log('Invalid date');
+*/
+
+//statements and expressions
+
+//expressions produce values
+//statement like full sentences not produce values
+
+console.log(`I'm ${20 - 5}`) //expression
 
 
 
