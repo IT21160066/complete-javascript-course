@@ -77,9 +77,11 @@ if( averageDolphins > averageKoalas && averageDolphins >= 100) {
 
 //coding challenge 4
 
-const billValue = 5;
+/*const billValue = 5;
 const tipPrecentage = billValue >= 50 && billValue <= 300 ? billValue * 0.15
  : billValue * 0.2;
 const finalAmount = billValue + tipPrecentage;
 console.log(`The bill was ${billValue}, the tip was ${tipPrecentage}, and
-the total value ${finalAmount}`); 
+the total value ${finalAmount}`); */
+
+
