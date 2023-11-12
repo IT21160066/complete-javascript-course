@@ -32,3 +32,51 @@ console.log(appleJuice);
 
 const appleOrangeJuice = fruitProcessor(3, 4);
 console.log(appleOrangeJuice);
+
+//function declaration
+
+const age1 = calAge1(1991);
+console.log(age1);
+
+function calAge1(birthYear) {
+    return 2037 - birthYear;
+}
+
+//function expression
+//anonymus function
+const calAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const age2 = calAge2(1991);
+console.log(age2);
+
+//arrow function
+const calAge3 = birthYear => 2037 - birthYear;
+const age3 = calAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirementAge = 70 - age;
+    //return retirementAge;
+    return `${firstName} retires in ${retirementAge}`
+}
+
+console.log(yearsUntilRetirement(1991, 'John'));
+console.log(yearsUntilRetirement(1994, 'Bob'));
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+
+    const applePeices = cutFruitPieces(apples);
+    const orangepieces = cutFruitPieces(oranges);
+    //console.log(apples, oranges)
+    const juice = `Juice produced with ${applePeices} peices of apples and ${orangepieces} peices of oranges`;
+    return juice;
+}
+
+console.log(fruitProcessor(2, 3));
