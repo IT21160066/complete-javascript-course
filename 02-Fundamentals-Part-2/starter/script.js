@@ -13,7 +13,7 @@
 
 //functions
 
-function logger() {
+/*function logger() {
     console.log('My name is kamal');
 }
 
@@ -52,19 +52,19 @@ const age2 = calAge2(1991);
 console.log(age2);
 
 //arrow function
-const calAge3 = birthYear => 2037 - birthYear;
-const age3 = calAge3(1991);
-console.log(age3);
+// const calAge3 = birthYear => 2037 - birthYear;
+// const age3 = calAge3(1991);
+// console.log(age3);
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-    const age = 2037 - birthYear;
-    const retirementAge = 70 - age;
-    //return retirementAge;
-    return `${firstName} retires in ${retirementAge}`
-}
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//     const age = 2037 - birthYear;
+//     const retirementAge = 70 - age;
+//     //return retirementAge;
+//     return `${firstName} retires in ${retirementAge}`
+// }
 
-console.log(yearsUntilRetirement(1991, 'John'));
-console.log(yearsUntilRetirement(1994, 'Bob'));
+// console.log(yearsUntilRetirement(1991, 'John'));
+// console.log(yearsUntilRetirement(1994, 'Bob'));
 
 function cutFruitPieces(fruit) {
     return fruit * 4;
@@ -80,3 +80,25 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+
+//convert to a normal function
+
+const calcAge = function (birthYear){
+    return 2037 - birthYear;
+}
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirementAge = 70 - age;
+
+    if(retirementAge > 0) 
+        //return `${firstName} retires in ${retirementAge} years`
+        return retirementAge;
+    else
+        console.log( `Redired ${Math.abs(retirementAge)} years ago`);
+        return -1;
+}
+
+console.log(yearsUntilRetirement(1961, 'James'));
+*/
+
