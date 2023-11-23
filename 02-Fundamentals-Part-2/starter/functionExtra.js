@@ -1,0 +1,6 @@
+'use strict';
+
+//anonymus functions
+
+
+

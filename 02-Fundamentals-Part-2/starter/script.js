@@ -167,4 +167,47 @@ console.log(friends.includes('Steven'));
 friends.push(23);
 console.log(friends.includes('23'));
 
+//objects
+
+//value pills
+
+//we are literally writing down entire object
+//objects for unstructured data
+//arrays for orderd/structured data
+
+const jonas = { //object literal synatx
+    firstName: 'Jonas',
+    lastName: "John",
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Micheal', 'Steven', 'Peter']
+};
+
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey =  'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+//const interset = prompt('What do  you want to knowabout jonas choose between firstName, lastname age, job and friends');
+//console.log(jonas[interset]);
+
+// if(jonas[interset])
+//     console.log(jonas[interset])
+// else
+//     console.log('Invalid')
+
+
+jonas.locations = 'New York';
+jonas['twitter'] = 'jonastw';
+console.log(jonas);
+
+//challenge
+const challenge = `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`;
+console.log(challenge);
+
+
+
 
