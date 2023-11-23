@@ -107,7 +107,7 @@ console.log(yearsUntilRetirement(1961, 'James'));
 // const firend1 = 'Michel';
 // const freind2 = 'Steven';
 // const freind3 = 'Peter';
-
+/*
 const friends = ['Micheal', 'Steven', 'Peter'];
 console.log(friends);
 
@@ -140,4 +140,31 @@ const age3 = calAge(years[years.length - 1]);
 console.log(age1, age2, age3);
 
 const ages = [calAge(years[0]), calAge(years[1]), calAge(years[2])];
-console.log(ages);
+console.log(ages);*/
+
+//Array methods
+const friends = ['Micheal', 'Steven', 'Peter'];
+const newLength = friends.push('Jay'); //return value length
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('James');
+console.log(friends);
+
+//remove elements
+console.log(`elemet removed >>> ${friends.pop()}`);
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Micheal'));
+
+console.log(friends.includes('Steven'));
+
+friends.push(23);
+console.log(friends.includes('23'));
+
+
