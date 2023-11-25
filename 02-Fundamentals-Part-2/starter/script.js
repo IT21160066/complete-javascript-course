@@ -209,5 +209,48 @@ const challenge = `${jonas.firstName} has ${jonas.friends.length} friends, and h
 console.log(challenge);
 
 
+const james = { //object literal synatx
+    firstName: 'Jonas',
+    lastName: "John",
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Micheal', 'Steven', 'Peter'],
+    hasDriversLicense: true,
+    // calAge: function(birthYear){ //any function attached to object is called method
+    //     return 2023 - birthYear;
+    // }
+
+    // calAge: function(){ 
+    //     console.log(this)
+    //     return 2037 - this.birthYear;
+    // }
+
+    calAge: function(){ 
+        this.age =  2037 - this.birthYear;
+        return this.age;
+    },
+    getsummary: function() {
+        return `${this.firstName} is a ${this.calAge()} old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'not'} drivers license`
+    }
+};
+
+// console.log(james.calAge(`${1991}`));
+// console.log(james.calAge(1991));
+// console.log(james['calAge'](1991));
+// console.log(`Age >> ${james.calAge(james.birthYear)}`);
+
+console.log(james.calAge()); //only need to calculate age once
+console.log(james.age);
+
+//challenge
+
+if(james.hasDriversLicense)
+    console.log(`${james.firstName} is a ${james.age} old ${james.job}, and he has a drivers license`)
+else
+    console.log(`${james.firstName} is a ${james.age} old ${james.job}, and he has not  drivers license`)
+
+console.log(james.getsummary())
+
+
 
 
