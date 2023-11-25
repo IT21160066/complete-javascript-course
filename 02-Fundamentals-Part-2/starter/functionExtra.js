@@ -52,5 +52,43 @@ console.log(division);
 
 //object destructuring
 
+const personOne = {
+    firstName: 'Kylie',
+    age: 24,
+    address: {
+        city: 'Colombo',
+        state: 'ABCD'
+    }
+}
 
+const personTwo = {
+    //firstName: 'James',
+    //age: 24,
+    address: {
+        city: 'Colombo',
+        state: 'CGBA'
+    }
+}
+
+const { firstName: actualName = 'John', age, favoritefood = 'Rice' } = personTwo;
+console.log(actualName, age);
+console.log(favoritefood);
+
+// const { firstName, ...rst} = personTwo
+// console.log(rst)
+
+const { firstName, address: { city }} = personTwo
+console.log(city)
+
+
+const personThree = { ...personOne, ...personTwo }
+console.log(personThree)
+
+//--------------------------------
+
+function printUser({firstName, age, favoritefood = 'watermelon'}) {
+    console.log(`firstname: ${firstName} and age: ${age} food is ${favoritefood}`)
+}
+
+printUser(personOne)
 
