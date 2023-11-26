@@ -249,7 +249,7 @@ if(james.hasDriversLicense)
 else
     console.log(`${james.firstName} is a ${james.age} old ${james.job}, and he has not  drivers license`)
 
-console.log(james.getsummary())*/
+console.log(james.getsummary())
 
 
 const jimmy = { 
@@ -268,7 +268,45 @@ const jimmy = {
 }
 
 console.log(jimmy.calcAge());
-//console.log(jimmy['calcAge'](1991));
+//console.log(jimmy['calcAge'](1991));*/
+
+//loops
+
+// for(let rep = 1; rep <= 5; rep++) {
+//     console.log(`lifting weight repition ${rep}`)
+// }
+
+const SamArray = [
+    'Sam', "Johnson", 2037 - 1991, 'teacher', ['Micheal', 'Steven', 'Peter'], true
+]
+
+const types1 = [];
+const types2 = [];
+
+for(let i = 0; i < SamArray.length; i++) {
+    console.log(SamArray[i], typeof(SamArray[i]));
+
+    types1[i] = typeof SamArray[i];
+    types2.push(typeof SamArray[i]);
+}
+
+console.log(types1);
+console.log(types2);
+
+const years = [1991, 2007, 1996, 2020];
+const ages = [];
+
+for(let i = 0; i < years.length; i++) {
+    ages[i] = 2037 - years[i];
+}
+
+console.log(ages);
+
+//continue and break
+
+
+
+
 
 
 
