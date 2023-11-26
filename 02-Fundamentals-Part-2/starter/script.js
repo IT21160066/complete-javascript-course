@@ -141,7 +141,7 @@ console.log(age1, age2, age3);
 
 const ages = [calAge(years[0]), calAge(years[1]), calAge(years[2])];
 console.log(ages);*/
-
+/*
 //Array methods
 const friends = ['Micheal', 'Steven', 'Peter'];
 const newLength = friends.push('Jay'); //return value length
@@ -249,8 +249,26 @@ if(james.hasDriversLicense)
 else
     console.log(`${james.firstName} is a ${james.age} old ${james.job}, and he has not  drivers license`)
 
-console.log(james.getsummary())
+console.log(james.getsummary())*/
 
+
+const jimmy = { 
+    firstName: 'Jimmy',
+    lastName: "Jamey",
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Micheal', 'Steven', 'Peter'],
+    hasDriversLicense: true,
+    // calcAge : function(birthYear) { //function value
+    //     return 2037 - birthYear
+    // }
+    calcAge : function() { //function value
+        return 2037 - this.birthYear
+    }
+}
+
+console.log(jimmy.calcAge());
+//console.log(jimmy['calcAge'](1991));
 
 
 

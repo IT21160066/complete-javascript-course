@@ -17,7 +17,7 @@ const checkWinner = function (dolphinsAverage, koalasAverage){
 checkWinner(dolphinsAverage, koalasAverage);
 checkWinner(400, 30);*/
 
-
+/*
 const calcTip = (billValue) => {
     const tipPrecentage = billValue >= 50 && billValue <= 300 ? billValue * 0.15
     : billValue * 0.2;
@@ -43,4 +43,32 @@ console.log(total1);
 
 const total2 = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(total2)
+*/
 
+//challenge 03
+
+const MarkMiller = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function() {
+        return Math.ceil(this.mass / this.height ** 2);
+    }
+}
+const JohnSmith = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function() {
+        return Math.ceil(this.mass / this.height ** 2);
+    }
+}
+
+const markBMI = MarkMiller.calcBMI();
+const johnBMI = JohnSmith.calcBMI();
+//console.log(markBMI, johnBMI)
+
+console.log(
+    markBMI > johnBMI ? `${MarkMiller.fullName}'s BMI (${markBMI}) is higher than ${JohnSmith.fullName}'s (${johnBMI})!` :
+    `${JohnSmith.fullName}'s BMI (${johnBMI}) is higher than ${MarkMiller.fullName}'s (${markBMI})!`
+);
