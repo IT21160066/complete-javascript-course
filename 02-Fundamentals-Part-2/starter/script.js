@@ -277,7 +277,12 @@ console.log(jimmy.calcAge());
 // }
 
 const SamArray = [
-    'Sam', "Johnson", 2037 - 1991, 'teacher', ['Micheal', 'Steven', 'Peter'], true
+    'Sam', 
+    "Johnson", 
+    2037 - 1991, 
+    'teacher', 
+    ['Micheal', 'Steven', 'Peter'], 
+    true
 ]
 
 const types1 = [];
@@ -303,8 +308,17 @@ for(let i = 0; i < years.length; i++) {
 console.log(ages);
 
 //continue and break
+console.log('---ONLY STRINGS---')
+for(let i = 0; i < SamArray.length; i++) {
+    if(typeof SamArray[i] !== 'string') continue;
+    console.log(SamArray[i], typeof(SamArray[i]));
+}
 
-
+console.log('---BREAK WITH NUMBERS---')
+for(let i = 0; i < SamArray.length; i++) {
+    if(typeof SamArray[i] === 'number') break;
+    console.log(SamArray[i], typeof(SamArray[i]));
+}
 
 
 
