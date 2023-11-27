@@ -268,7 +268,7 @@ const jimmy = {
 }
 
 console.log(jimmy.calcAge());
-//console.log(jimmy['calcAge'](1991));*/
+//console.log(jimmy['calcAge'](1991));
 
 //loops
 
@@ -320,7 +320,32 @@ for(let i = 0; i < SamArray.length; i++) {
     console.log(SamArray[i], typeof(SamArray[i]));
 }
 
+for(let i = SamArray.length - 1; i >= 0; i--) {
+    console.log(i, SamArray[i])
+}
 
+for(let exercise = 1; exercise < 4; exercise++){
+    console.log(`----Starting exercise ${exercise}`);
+    for(let rep = 1; rep < 6; rep ++){
+        console.log(`Lifting weight repition ${rep}`)
+    }
+}
 
+//while loop
+
+let rep  = 1;
+while(rep <= 5) {
+    console.log(`rep ${rep}`)
+    rep++;
+}
+*/
+
+let num = Math.trunc(Math.random() * 6) + 1;
+//console.log(num)
+while(num !== 6) {
+    console.log(`rolled dice ${num}`)
+    num = Math.trunc(Math.random() * 6) + 1;
+    if(num === 6) console.log('rolled 6')
+}
 
 
