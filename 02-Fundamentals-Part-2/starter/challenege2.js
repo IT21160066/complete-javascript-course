@@ -43,7 +43,7 @@ console.log(total1);
 
 const total2 = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(total2)
-*/
+
 
 //challenge 03
 
@@ -72,3 +72,39 @@ console.log(
     markBMI > johnBMI ? `${MarkMiller.fullName}'s BMI (${markBMI}) is higher than ${JohnSmith.fullName}'s (${johnBMI})!` :
     `${JohnSmith.fullName}'s BMI (${johnBMI}) is higher than ${MarkMiller.fullName}'s (${markBMI})!`
 );
+*/
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+const totals = [];
+
+for(let i = 0; i < bills.length; i++){
+    const calcTip = (billValue) => {
+        const tipPrecentage = billValue >= 50 && billValue <= 300 ? billValue * 0.15
+        : billValue * 0.2;
+        const totalBill = billValue +  tipPrecentage;
+        tips.push(tipPrecentage);
+        totals.push(totalBill);
+    }
+
+    calcTip(bills[i]);
+}
+
+console.log(tips);
+console.log(totals);
+
+const average = [];
+
+for(let i = 0; i < totals.length; i++) {
+    const calcAverage = (arr) => {
+        let sum = 0;
+        sum += arr;
+        const avg = sum / totals.length;
+        average.push(avg);
+    }
+    
+    calcAverage(totals[i])
+}
+
+console.log(average)
