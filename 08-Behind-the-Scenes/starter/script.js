@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 //global scope
 function calcAge(birthYear) {
   //function scope
@@ -32,3 +33,39 @@ function calcAge(birthYear) {
 
 const firstName = 'jonas';
 calcAge(1991);
+*/
+
+/*
+// console.log(me);
+// console.log(job);
+// console.log(year);
+
+var me = 'jonas';
+let job = 'teacher';
+const year = 1991;
+
+// console.log(addDecl(1, 3));
+// console.log(addExpr(1, 3));
+// console.log(addArrow(1, 3));
+
+function addDecl(a, b) {
+  return a + b;
+}
+
+const addExpr = function (a, b) {
+  return a + b;
+};
+
+const addArrow = (a, b) => a + b;
+*/
+
+//in this point numProducts undefined
+console.log(typeof num);
+if (!numProducts) deleteShoppiingCart();
+
+var numProducts = 10;
+console.log(typeof numProducts);
+
+function deleteShoppiingCart() {
+  console.log('all products deleted');
+}
