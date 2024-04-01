@@ -167,6 +167,7 @@ console.log(friend);
 
 */
 
+/*
 let lastName = 'williams';
 let oldLastName = lastName;
 lastName = 'davis';
@@ -194,3 +195,15 @@ jessicaCopy.lastName = 'davis';
 jessicaCopy.family.push('john');
 
 console.log(jessica2, jessicaCopy);
+*/
+
+const me = {
+  name: 'jonas',
+  age: 30,
+};
+
+const friend = me;
+friend.age = 35;
+
+console.log(friend);
+console.log(me);
