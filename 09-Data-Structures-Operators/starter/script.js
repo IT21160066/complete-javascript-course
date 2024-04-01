@@ -38,7 +38,14 @@ const restaurant = {
   orderPasta: function (ing1, ing2, ing3) {
     console.log(`ingredients ${ing1}, ${ing2}, ${ing3}`);
   },
+
+  orderPizza: function (mainIng, ...otherIngredents) {
+    console.log(mainIng);
+    console.log(otherIngredents);
+  },
 };
+
+restaurant.orderPizza('item1', 'item2', 'item3');
 
 /*
 restaurant.orderDelivery({
@@ -131,25 +138,40 @@ console.log(p, q, r);
 
 // restaurant.orderPasta(...ingredients);
 
-const newResturant = { ...restaurant, founder: 'kamal' };
-console.log(newResturant);
+// const newResturant = { ...restaurant, founder: 'kamal' };
+// console.log(newResturant);
 
-const resturantCopy = { ...restaurant };
-resturantCopy.firstName = 'copy resturant';
-console.log(resturantCopy.firstName);
-console.log(restaurant.firstName);
+// const resturantCopy = { ...restaurant };
+// resturantCopy.firstName = 'copy resturant';
+// console.log(resturantCopy.firstName);
+// console.log(restaurant.firstName);
 
-//rest pattern - pack elements in to array
+// //rest pattern - pack elements in to array
 
-const numbers = [1, 2, ...[3, 4]];
-const [a, b, ...others] = [1, 2, 3, 4, 5];
-console.log(a, b, others);
+// const numbers = [1, 2, ...[3, 4]];
+// const [a, b, ...others] = [1, 2, 3, 4, 5];
+// console.log(a, b, others);
 
-const [pizza, , Risotto, ...otherFood] = [
-  ...restaurant.mainMenu,
-  ...restaurant.starterMenu,
-];
-console.log(pizza, Risotto, otherFood);
+// const [pizza, , Risotto, ...otherFood] = [
+//   ...restaurant.mainMenu,
+//   ...restaurant.starterMenu,
+// ];
+// console.log(pizza, Risotto, otherFood);
 
-const { sat, ...weekDays } = restaurant.openingHours;
-console.log(weekDays);
+// const { sat, ...weekDays } = restaurant.openingHours;
+// console.log(weekDays);
+
+// const add = function (...numbers) {
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     sum = +numbers[i];
+//     console.log(sum);
+//   }
+//   console.log(numbers);
+// };
+
+// add(2, 3);
+// add(2, 3, 4, 4);
+
+// const x = [23, 5, 7];
+// add(...x);
